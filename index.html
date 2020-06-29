@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sheet</title>
+	    <link rel = "stylesheet" href="stylesheet.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	    <link rel="stylesheet" href="https://unpkg.com/reset-css/reset.css">
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script src="script.js"></script></head>
+
+<body style="margin: 1%;">
+  <button class = "chart-button" onclick="showChart()">
+        <img src="chart.png" style = "vertical-align: middle">
+			Show chart
+    </button>
+    <div class="search">
+        <input id="searchBox" type="text" placeholder="Search by name"  name="search" maxlength="12" size="12" onkeyup="myFunction()">
+    </div>
+<div class="user">
+<table class="table table-stripped" id="myTable">
+
+<tr>
+<th>  </th>
+<th class="lc"> Last </th>
+<th> First </th>
+<th> Username </th>
+<th> Cell </th>
+<th> Location </th>
+<th>  </th>
+
+</tr>
+<tbody id="data">
+</tbody>
+</table>
+</div>
+ <div id="modal" class="modal-stl" onclick="closeChart()">
+    <div id="modal_cont" class="modal_cont-stl">
+        <div id="piechart" ></div>
+    </div>
+</div>
+</body>
+
+
+
+</html>
